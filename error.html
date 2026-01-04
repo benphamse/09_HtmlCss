@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 • Page not found</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Righteous&display=swap" rel="stylesheet" />
+
+    <!-- Base theme + Error styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="error.css" />
+  </head>
+  <body class="error-page">
+    <!-- Background -->
+    <div class="error-bg" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+      <span class="grid"></span>
+      <span class="grain"></span>
+    </div>
+
+    <main class="error-card" role="main" aria-labelledby="err-title">
+      <div class="pill">Error v3</div>
+
+      <h1 class="code" aria-label="404">
+        <span class="code-fill">404</span>
+        <span class="code-stroke" aria-hidden="true">404</span>
+      </h1>
+
+      <h2 id="err-title" class="title">Page not found</h2>
+      <p class="desc">
+        The page you’re looking for doesn’t exist, was moved, or is temporarily unavailable.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="/">Go Home</a>
+        <button class="btn ghost" type="button" onclick="history.back()">Go Back</button>
+      </div>
+
+      <p class="hint">Tip: Check the URL for typos, or return to the homepage.</p>
+
+      <!-- Small illustration -->
+      <div class="illu" aria-hidden="true">
+        <svg width="160" height="80" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.9" stroke="currentColor" stroke-width="6" stroke-linecap="round">
+            <path d="M25 60h70" />
+            <path d="M145 60h70" />
+            <path d="M120 25v70" />
+            <path d="M90 30l-20 20" />
+            <path d="M170 30l20 20" />
+          </g>
+        </svg>
+      </div>
+    </main>
+
+    <noscript>
+      <style>
+        .blob,.grid,.grain { display:none !important; }
+      </style>
+    </noscript>
+  </body>
+</html>
