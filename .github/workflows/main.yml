@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -24,3 +24,7 @@ jobs:
           folder: . # Deploy từ thư mục gốc
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true
+          clean-exclude: |
+            .nojekyll
+            CNAME
